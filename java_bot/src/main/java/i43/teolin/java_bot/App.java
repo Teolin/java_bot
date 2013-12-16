@@ -12,7 +12,7 @@ public class App
 public static void main(String[] args) {
     PopupMenu popup = new PopupMenu();
 
-    MenuItem exitItem = new MenuItem("test");
+    MenuItem exitItem = new MenuItem("Exit");
 
     exitItem.addActionListener(new ActionListener() {
         public void actionPerformed(ActionEvent e) {
@@ -29,7 +29,7 @@ public static void main(String[] args) {
     
     Image image = Toolkit.getDefaultToolkit().getImage(imageUrl);
    
-    TrayIcon trayIcon = new TrayIcon(image, "test2", popup);
+    TrayIcon trayIcon = new TrayIcon(image, "Java-Bot", popup);
 
     trayIcon.setImageAutoSize(true);
 
